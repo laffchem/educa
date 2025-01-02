@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
 </head>
 <body>
-    <div id="header">
+    <div id="header" style="list-style-type: none;">
         <a href="/" class="logo"></a>
         {% if request.user.is_authenticated %}
         <li>
