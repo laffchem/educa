@@ -11,6 +11,7 @@
     <div id="header" style="list-style-type: none;">
         <a href="/" class="logo"></a>
         {% if request.user.is_authenticated %}
+        <li><a href="{% url "manage_course_list" %}">My Courses</a></li>
         <li>
             <form action="{% url "logout" %}" method='post'>
                 {% csrf_token %}
